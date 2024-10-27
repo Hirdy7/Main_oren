@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_windows"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/group_517"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="10dp">
+
+    </ImageView>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    </androidx.appcompat.widget.Toolbar>
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/iphone_14_plus___7"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp">
+
+    </ImageView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Main_Constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/Main_Constraint">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunitoregular"
+                android:text="“Доступное Оренбуржье”"
+                android:textColor="#3D4F9F"
+                android:textSize="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="0dp"></TextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="405dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="“Доступное Оренбуржье” - это амбициозный проект, направленный на создание в Оренбургской области комфортных
+    условий для путешествий людей с ограниченными возможностями здоровья. Он призван сделать маломобильного путешественника
+    желанным гостем региона, усилить туристический потенциал и сделать Оренбуржье привлекательным для более широкого круга туристов."
+            android:textSize="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/head"
+            tools:ignore="TextSizeCheck">
+
+        </TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunitobold"
+        android:gravity="center_horizontal"
+        android:text="Возможности проекта “Доступное Оренбуржье”"
+        android:textColor="#3D4F9F"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/video"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="20dp">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/video"
+        android:layout_width="285dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Main_Constraint"
+        tools:ignore="MissingConstraints">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="413dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitoregular"
+            android:text="- Интерактивная карта с доступными маршрутами"
+            android:textColor="#3D4F9F"
+            android:textSize="15dp"
+            tools:ignore="TextSizeCheck">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitoregular"
+            android:text="- Поиск попутчиков"
+            android:textColor="#3D4F9F"
+            android:textSize="15dp"
+            tools:ignore="TextSizeCheck">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitoregular"
+            android:text="- Отзывы по маршрутам"
+            android:textColor="#3D4F9F"
+            android:textSize="15dp"
+            tools:ignore="TextSizeCheck">
+
+        </TextView>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitoregular"
+            android:text="- Видеогид маршрутов"
+            android:textColor="#3D4F9F"
+            android:textSize="15dp"
+            tools:ignore="TextSizeCheck">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitoregular"
+            android:text="- Игра “Активный турист”"
+            android:textColor="#3D4F9F"
+            android:textSize="15dp"
+            tools:ignore="TextSizeCheck">
+
+        </TextView>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/photo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="5dp">
+
+    </ImageView>
+</androidx.constraintlayout.widget.ConstraintLayout>
